@@ -110,6 +110,7 @@ int main(void)
         }
         else if (typ == 'Q')
         {
+            std::cout << "Bye Have a Great Day\n";
             break;
         }
     }

@@ -143,7 +143,7 @@ void GraphingCalculator::draw_trigo_function(const std::string& function)
     va.bind();
     ib.Bind();
 
-    renderer.draw(va, ib, shader, GL_POINTS);
+    renderer.draw(va, ib, shader, GL_LINE_STRIP);
 
     va.unBind();
     vb.unBind();
@@ -183,7 +183,7 @@ void GraphingCalculator::draw_linear_function(double a, double b)
     va.bind();
     ib.Bind();
 
-    renderer.draw(va, ib, shader, GL_POINTS);
+    renderer.draw(va, ib, shader, GL_LINES);
 
     va.unBind();
     vb.unBind();
@@ -214,7 +214,7 @@ void GraphingCalculator::draw_quadratic_function(double a, double b, double c)
     shader.setUniform4f("uColor", 1.0f, 1.0f, 1.0f, 1.0f);
     va.bind();
     ib.Bind();
-    renderer.draw(va, ib, shader, GL_POINTS);
+    renderer.draw(va, ib, shader, GL_LINE_STRIP);
     va.unBind();
     vb.unBind();
     ib.Unbind();
@@ -244,7 +244,7 @@ void GraphingCalculator::draw_cubic_function(double a, double b, double c, doubl
     shader.setUniform4f("uColor", 1.0f, 1.0f, 1.0f, 1.0f);
     va.bind();
     ib.Bind();
-    renderer.draw(va, ib, shader, GL_POINTS);
+    renderer.draw(va, ib, shader, GL_LINE_STRIP);
     va.unBind();
     vb.unBind();
     ib.Unbind();
@@ -274,7 +274,7 @@ void GraphingCalculator::draw_power_function(double a)
     shader.setUniform4f("uColor", 1.0f, 1.0f, 1.0f, 1.0f);
     va.bind();
     ib.Bind();
-    renderer.draw(va, ib, shader, GL_POINTS);
+    renderer.draw(va, ib, shader, GL_LINE_STRIP);
     va.unBind();
     vb.unBind();
     ib.Unbind();
@@ -304,7 +304,7 @@ void GraphingCalculator::draw_exponential_function(double a)
     shader.setUniform4f("uColor", 1.0f, 1.0f, 1.0f, 1.0f);
     va.bind();
     ib.Bind();
-    renderer.draw(va, ib, shader, GL_POINTS);
+    renderer.draw(va, ib, shader, GL_LINE_STRIP);
     va.unBind();
     vb.unBind();
     ib.Unbind();
@@ -334,7 +334,7 @@ void GraphingCalculator::draw_log_function(double a)
     shader.setUniform4f("uColor", 1.0f, 1.0f, 1.0f, 1.0f);
     va.bind();
     ib.Bind();
-    renderer.draw(va, ib, shader, GL_POINTS);
+    renderer.draw(va, ib, shader, GL_LINE_STRIP);
     va.unBind();
     vb.unBind();
     ib.Unbind();
@@ -364,7 +364,7 @@ void GraphingCalculator::draw_mod_function(double a, double b)
     shader.setUniform4f("uColor", 1.0f, 1.0f, 1.0f, 1.0f);
     va.bind();
     ib.Bind();
-    renderer.draw(va, ib, shader, GL_POINTS);
+    renderer.draw(va, ib, shader, GL_LINE_STRIP);
     va.unBind();
     vb.unBind();
     ib.Unbind();
