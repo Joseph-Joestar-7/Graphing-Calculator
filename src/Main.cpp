@@ -97,8 +97,7 @@ int main(void)
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
 
-        /* Poll for and process events */
-        glfwPollEvents();
+        
 
         std::cout << "Enter B if you want to clear the screen and plot another curve\n";
         std::cout << "Enter Q if you want to quit\n";
@@ -113,6 +112,9 @@ int main(void)
             std::cout << "Bye Have a Great Day\n";
             break;
         }
+
+        /* Poll for and process events */
+        glfwPollEvents();
     }
     glfwTerminate();
     return 0;
